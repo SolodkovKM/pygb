@@ -118,3 +118,5 @@ def STask8():
         print('Yes')
     else:
         print('No')
+
+STask8()
