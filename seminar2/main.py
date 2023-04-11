@@ -72,3 +72,39 @@ def Task15():
         if el > max:
             max = el
     print(min , max)
+
+
+#Вводится 2 числа a и b Найти все простые число в дипапзоне от a до b
+
+def ATask():
+    a = int(input("Input A: "))
+    b = int(input("Input B: "))
+    eazy = list()
+    while a < b:
+        for i in range(2, a // 2 + 1):
+            if a % i == 0:
+                break
+        else:
+            eazy.append(a)
+        a += 1
+    print(eazy)
+
+
+
+def Task10():
+    n = int(input("Input count: "))
+    listm = list()
+    for _ in range(0, n):
+        listm.append(random.randint(0, 1))
+    print(listm)
+    orel = 0
+    reshka = 0
+    for i in listm:
+        if i == 1:
+            orel += 1
+        else:
+            reshka += 1
+    if orel > reshka:
+        print(reshka)
+    else:
+        print(orel)
