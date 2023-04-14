@@ -1,3 +1,4 @@
+import math
 import random
 
 
@@ -108,3 +109,8 @@ def Task10():
         print(reshka)
     else:
         print(orel)
+
+
+print("2^7")
+st = "7"
+st.up
